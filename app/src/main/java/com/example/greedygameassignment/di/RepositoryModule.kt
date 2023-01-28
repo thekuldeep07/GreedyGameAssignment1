@@ -1,8 +1,7 @@
 package com.example.greedygameassignment.di
 
-import androidx.lifecycle.ViewModel
-import com.example.greedygameassignment.data.repository.TagRepositoryImpl
-import com.example.greedygameassignment.domain.repository.TagRepository
+import com.example.greedygameassignment.domain.repository.RepositoryImpl
+import com.example.greedygameassignment.domain.repository.Repository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -14,6 +13,6 @@ abstract class RepositoryModule {
 
     @Binds
     abstract fun provideTagRepository(
-        repo:TagRepositoryImpl
-    ): TagRepository
+        repo: RepositoryImpl
+    ): Repository
 }

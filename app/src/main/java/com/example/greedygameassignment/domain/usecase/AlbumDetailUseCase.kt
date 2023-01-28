@@ -4,13 +4,13 @@ import com.example.greedygameassignment.common.ApiState
 import com.example.greedygameassignment.common.map
 import com.example.greedygameassignment.data.model.AlbumDetail
 import com.example.greedygameassignment.domain.mapper.AlbumDetailMapper
-import com.example.greedygameassignment.domain.repository.TagRepository
+import com.example.greedygameassignment.domain.repository.Repository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
 class AlbumDetailUseCase @Inject constructor(
-    private val repo: TagRepository,
+    private val repo: Repository,
     private val mapper : AlbumDetailMapper
 ) {
 
